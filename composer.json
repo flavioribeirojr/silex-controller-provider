@@ -1,0 +1,22 @@
+{
+    "name": "flaviojr/silex-controller-provider",
+    "description": "Controller provider for silex applications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flávio Jr.",
+            "email": "flavioribeirojr@outlook.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "^2.1",
+        "pimple/pimple": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sneek\\": "src/",
+            "Test\\": "example/src/"
+        }
+    }
+}
