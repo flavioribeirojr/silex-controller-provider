@@ -9,6 +9,12 @@ no longer needs to manually register each one of your controllers, passing their
 
 # Usage
 
+To install it:
+
+```sh
+$ composer require flaviojr/silex-controller-provider
+```
+
 To use this provider, you simply need to register it within your application:
 
 ```php
@@ -21,8 +27,8 @@ $app->register(new Sneek\Providers\ControllerProvider('controller-dir', 'Your-ro
 * The first parameter indicate where your **controller files** are.
 * The second one is the root namespace from where your controllers are. For example, if your controller namespace is
   `App\Controllers\HomeController`, then the value to be passed is the string 'App'.
-* The last parameter is optional, you shold use it if your root namespace isn't the name of your root directory. For example,
-  if you have this folder structure: `src/Controllers/CoffeeController`, having the namespace `App\Controllers\CoffeeController`
+* The last parameter is optional, you should use it if your root namespace isn't the name of your root directory. For example,
+  if you have a folder structure like this: `src/Controllers/CoffeeController`, having the namespace `App\Controllers\CoffeeController`
   you have to pass the 'src' string, so that the provider know that 'src' is equivalent to 'App' in this case.
   
   
@@ -37,4 +43,4 @@ $app->get('/', 'App\Controllers\CoffeeController:index');
 
 # Notes
 
-* You don't have to worry about your controller dependencies, the provider you recursively resolve each one of them.
+* You don't have to worry about your controller dependencies, the provider will recursively resolve each one of them.
