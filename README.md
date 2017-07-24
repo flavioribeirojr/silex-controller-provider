@@ -12,7 +12,7 @@ no longer needs to manually register each one of your controllers, passing their
 To install it:
 
 ```sh
-$ composer require flaviojr/silex-controller-provider
+$ composer require "flaviojr/silex-controller-provider":"1.0"
 ```
 
 To use this provider, you simply need to register it within your application:
