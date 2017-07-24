@@ -9,4 +9,5 @@ $app = new \Silex\Application();
 $app->register(new ServiceControllerServiceProvider);
 $app->register(new Sneek\Providers\ControllerProvider('src/Controllers', 'Test', 'src'));
 
+
 $app->get('/', 'Test\Controllers\ExampleController:index');

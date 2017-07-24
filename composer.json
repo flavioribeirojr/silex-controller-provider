@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": ">=5.5.9",
         "silex/silex": "^2.1",
         "pimple/pimple": "~3.0"
     },
@@ -18,5 +19,6 @@
             "Sneek\\": "src/",
             "Test\\": "example/src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
